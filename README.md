@@ -53,8 +53,22 @@ $ kctl port-forward --address localhost,[ANY PRIVATE IP] PODNAME 8080:9090 -n mo
     I tinkered with the configuration file. I have left only one email reciever. However, I do not think this works 
     due to the SMTP configuration. 
     ToDo: Actually integrate with email
+    - **Deploy**
+        - AlertManagerConfigmap
+        - AlertTemplateConfigMap
+        - AlertManagerDeployment
+        - AlertManagerService
+    
+    _Forward port as necessary_
 
-- Grafana
+- **Grafana**
+    - It's a visualization tool. Almost a default with Prometheus. However, it also works with other integrations. 
+    - **Deploy**
+        - grafana-datasource-config
+        - grafana-deployment
+        - grafana-service
+
+    _Forward port as necessary_
 
 ToDo:
 - SetUp NodeExporter
