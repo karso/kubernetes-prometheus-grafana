@@ -15,6 +15,7 @@ spec:
     http:
       paths:
       - backend:
+          pathtype: exact
           serviceName: prometheus-service
           servicePort: 8080
   tls:
